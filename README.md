@@ -33,4 +33,3 @@ The following directories are part of this repository:
 - `code` contains the source code necessary to reproduce our results, along with further details on its implementation.
 - `data` contains the data employed for the epidemic simulation.
 - `figures` contains all images appearing in the paper, plus additional outputs from the code.
-- `eqs` simply contains renderings of the LaTeX equations shown in this page.
