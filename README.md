@@ -20,7 +20,7 @@ where <img src="https://rawgit.com/cparrarojas/neuraminidase-inhibitors/master/e
 
 This simplified by considering a *best-case scenario*, in which the drug stays at a constant concentration given by the peak <img src="https://rawgit.com/cparrarojas/neuraminidase-inhibitors/master/eqs/1ee3252ffc26342ad92c9009179dbca7.svg?invert_in_darkmode" align=middle width=21.381855pt height=22.46574pt/> at which it quickly converges, resulting in a constant efficacy <img src="https://rawgit.com/cparrarojas/neuraminidase-inhibitors/master/eqs/214137ef71f6ae5ef408da351260bf63.svg?invert_in_darkmode" align=middle width=14.400705pt height=22.63866pt/>, as shown below (<img src="https://rawgit.com/cparrarojas/neuraminidase-inhibitors/master/eqs/02ab12d0013b89c8edc7f0f2662fa7a9.svg?invert_in_darkmode" align=middle width=10.58706pt height=20.22207pt/> corresponds to the time of the <img src="https://rawgit.com/cparrarojas/neuraminidase-inhibitors/master/eqs/5cd92f0b94ff48a41ce46f35769fb579.svg?invert_in_darkmode" align=middle width=46.759185pt height=24.6576pt/>-th drug intake).
 
-<p align="center"><img src="./figures/D_eps.png" alt="constant efficacy" style="width: 500px;"/></p>
+<p align="center"><img src="./fig/D_eps.png" alt="constant efficacy" style="width: 500px;"/></p>
 
 Using this constant-efficacy within-host model, we explore the impact of treatment as a function of the efficacy and time of initiation post-infection.
 
