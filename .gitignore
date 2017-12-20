@@ -1,3 +1,5 @@
 *.ipynb_checkpoints
 *.pyc
 eqs/
+*.sublime-workspace
+*.sublime-project
