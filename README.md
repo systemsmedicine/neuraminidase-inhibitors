@@ -1,18 +1,19 @@
 Table of Contents
 =================
 
+* [Overview](#overview)
 * [Within\-host efficacy of neuraminidase inhibitors](#within-host-efficacy-of-neuraminidase-inhibitors)
 * [Between\-host effecttiveness of neuraminidase inhibitors](#between-host-effecttiveness-of-neuraminidase-inhibitors)
   * [Load settings and functions](#load-settings-and-functions)
   * [Network generation](#network-generation)
     * [Network degree distribution](#network-degree-distribution)
     * [An example network with 70 nodes](#an-example-network-with-70-nodes)
-  * [Parallel without cluster version](#parallel-without-cluster-version)
+  * [Parallel version without cluster](#parallel-version-without-cluster)
   * [Scenarios](#scenarios)
   * [Outputs processing](#outputs-processing)
     * [Simulation results](#simulation-results)
 
-# Within-host efficacy of neuraminidase inhibitors
+# Overview
 
 This repository is provided as a companion to the paper [title], which can be obtained from [bioRxiv](biorxiv), and which we also provide here for completeness.
 
@@ -34,7 +35,7 @@ where <img src="https://rawgit.com/cparrarojas/neuraminidase-inhibitors/master/e
 
 This simplified by considering a *best-case scenario*, in which the drug stays at a constant concentration given by the peak <img src="https://rawgit.com/cparrarojas/neuraminidase-inhibitors/master/eqs/1ee3252ffc26342ad92c9009179dbca7.svg?invert_in_darkmode" align=middle width=21.381855pt height=22.46574pt/> at which it quickly converges, resulting in a constant efficacy <img src="https://rawgit.com/cparrarojas/neuraminidase-inhibitors/master/eqs/214137ef71f6ae5ef408da351260bf63.svg?invert_in_darkmode" align=middle width=14.400705pt height=22.63866pt/>, as shown below (<img src="https://rawgit.com/cparrarojas/neuraminidase-inhibitors/master/eqs/02ab12d0013b89c8edc7f0f2662fa7a9.svg?invert_in_darkmode" align=middle width=10.58706pt height=20.22207pt/> corresponds to the time of the <img src="https://rawgit.com/cparrarojas/neuraminidase-inhibitors/master/eqs/5cd92f0b94ff48a41ce46f35769fb579.svg?invert_in_darkmode" align=middle width=46.759185pt height=24.6576pt/>-th drug intake).
 
-<p align="center"><img src="./fig/D_eps.png" alt="constant efficacy" style="width: 500px;"/></p>
+<p align="center"><img src="./figures/D_eps.png" alt="constant efficacy" style="width: 500px;"/></p>
 
 Using this constant-efficacy within-host model, we explore the impact of treatment as a function of the efficacy and time of initiation post-infection.
 
@@ -45,11 +46,23 @@ Our results suggest that the use of NAIs is unwarranted in practical treatment s
 The following directories are part of this repository:
 
 - `docs` contains a copy of the paper.
-- `code` contains the source code necessary to reproduce our results, along with further details on its implementation.
+- `code` contains the source code necessary to reproduce our results.
 - `data` contains the data employed for the epidemic simulation.
 - `figures` contains all images appearing in the paper, plus additional outputs from the code.
 
-Supplemental simulation code for the paper [link to bioarix] 
+
+# Within-host efficacy of neuraminidase inhibitors
+
+The code corresponding to the within-host analysis is provided here as an interactive Jupyter notebook (see [jupyter.org](https://jupyter.org/)): `within-host.ipynb`. It has been tested and should run with no issues in both Python 2 and 3.
+
+Our main analytical result corresponds to expressing the peak drug efficacy <img src="https://rawgit.com/cparrarojas/neuraminidase-inhibitors/master/eqs/214137ef71f6ae5ef408da351260bf63.svg?invert_in_darkmode" align=middle width=14.400705pt height=22.63866pt/> as a function of the drug parameters, as shown below.
+
+<p align="center"><img src="./figures/efficacy_drug.png" alt="constant efficacy" style="width: 500px;"/></p>
+
+Here, the horizontal axis shows the mean life of the drug, while the vertical axis corresponds to its half-maximal concentration. The curative and pandemic regimens correspond, respectively, to a dose of 75 and 150 mg, taken twice a day.
+
+**Note:** for visualisation-only purposes the notebook can be directly displayed in Github by simply clicking on it. However, we recommend using [this link](https://nbviewer.jupyter.org/github/systemsmedicine/neuraminidase-inhibitors/blob/master/code/within-host.ipynb).
+
 
 # Between-host effecttiveness of neuraminidase inhibitors
 
@@ -70,17 +83,17 @@ pop <- 10^4
 # M <- genNet(10000, 123, nAllunique, pAll)
 M = readRDS("./data/M.Rds")
 hist(degree(M$g), breaks=50, main="Network degree distribution", xlab="Number of contact", col="slategrey", sub="POLYMOD data (Mossong et al. (2008) Plos Med)")
-# savePNG("./fig/degree")
+# savePNG("./figures/degree")
 ```
 
 ### Network degree distribution
-![](./fig/degree.png)
+![](./figures/degree.png)
 
 ### An example network with 70 nodes
 
-![](./fig/net70.png)
+![](./figures/net70.png)
 
-## Parallel without cluster version
+## Parallel version without cluster
 
 ```R
 runcon <- function(namex="control", pvaci=0, ssize=1:1000) {
@@ -254,4 +267,4 @@ savePs("2panes")
 ```
 
 ### Simulation results
-![](./fig/2panes.png)
+![](./figures/2panes.png)
