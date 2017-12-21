@@ -57,7 +57,7 @@ The code corresponding to the within-host analysis is provided here as an intera
 
 Our main analytical result corresponds to expressing the peak drug efficacy <img src="https://rawgit.com/cparrarojas/neuraminidase-inhibitors/master/eqs/214137ef71f6ae5ef408da351260bf63.svg?invert_in_darkmode" align=middle width=14.400705pt height=22.63866pt/> as a function of the drug parameters, as shown below.
 
-<p align="center"><img src="./figures/efficacy_drug.png" alt="constant efficacy" style="width: 500px;"/></p>
+<p align="center"><img src="./figures/efficacy_drug.png" alt="efficacy vs. drug" style="width: 500px;"/></p>
 
 Here, the horizontal axis shows the mean life of the drug, while the vertical axis corresponds to its half-maximal concentration. The curative and pandemic regimens correspond, respectively, to a dose of 75 and 150 mg, taken twice a day.
 
