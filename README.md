@@ -15,7 +15,7 @@ Table of Contents
 
 # Overview
 
-This repository is provided as a companion to the paper [title], which can be obtained from [bioRxiv](biorxiv), and which we also provide here for completeness.
+This repository is provided as a companion to the paper *Neuraminidase inhibitors---is it time to call it a day?*, which can be obtained from [bioRxiv](https://www.biorxiv.org/content/early/2018/01/10/245175), and which we also provide here for completeness.
 
 We explore the effects of therapy with NAIs using the within-host model of influenza by [Lukens *et al.* (2014)](https://bmcpublichealth.biomedcentral.com/articles/10.1186/1471-2458-14-1019), which includes symptoms, and which we expand with a simple description of the antiviral drug. The system is given by
 
@@ -235,7 +235,7 @@ sweek45IC  <- processIC("./out/6week45")
 fpc <- function(x) unlist(x)/pop
 tmp <- list(fpc(controlIC), fpc(aweek90IC), fpc(zweek45IC), fpc(zweek90IC), fpc(dweek30IC), fpc(dweek60IC), fpc(dweek90IC), fpc(fweek225IC), fpc(fweek45IC), fpc(fweek675IC), fpc(fweek18IC), fpc(fweek36IC), fpc(fweek54IC), fpc(sweek15IC), fpc(sweek30IC), fpc(sweek45IC))
 
-# Drug coverage 
+# Drug coverage
 # -------------------------------------------------------------------------
 minperMg = 12/(10*75)
 dx <- seq(1, 42, 0.1)
