@@ -15,7 +15,7 @@ Table of Contents
 
 # Overview
 
-This repository is provided as a companion to the paper *Neuraminidase inhibitors---is it time to call it a day?*, which can be obtained from [bioRxiv](https://www.biorxiv.org/content/early/2018/01/10/245175), and which we also provide here for completeness.
+This repository is provided as a companion to the paper *Neuraminidase inhibitors---is it time to call it a day?*, by C. Parra-Rojas, V. K. Nguyen, G. Hernandez-Mejia, and E. A. Hernandez-Vargas.
 
 We explore the effects of therapy with NAIs using the within-host model of influenza by [Lukens *et al.* (2014)](https://bmcpublichealth.biomedcentral.com/articles/10.1186/1471-2458-14-1019), which includes symptoms, and which we expand with a simple description of the antiviral drug. The system is given by
 
@@ -27,7 +27,7 @@ We explore the effects of therapy with NAIs using the within-host model of influ
 
 <p align="center"><img src="https://rawgit.com/cparrarojas/neuraminidase-inhibitors/master/eqs/4fe0b125350f9f28bc0b9437f077469f.svg?invert_in_darkmode" align=middle width=227.2446pt height=39.45249pt/></p>
 
-<p align="center"><img src="https://rawgit.com/cparrarojas/neuraminidase-inhibitors/master/eqs/b1baa4de64863a8543547b341bfefb37.svg?invert_in_darkmode" align=middle width=92.95836pt height=16.50363pt/></p>
+<p align="center"><img src="https://rawgit.com/cparrarojas/neuraminidase-inhibitors/master/eqs/d72d8eaf8b33f2af11fe9a9fa60eae71.svg?invert_in_darkmode" align=middle width=227.8089pt height=39.45249pt/></p>
 
 <p align="center"><img src="https://rawgit.com/cparrarojas/neuraminidase-inhibitors/master/eqs/c5f0ebb2cdd8e62ea5f58ccc670f76ea.svg?invert_in_darkmode" align=middle width=59.47392pt height=18.330015pt/></p>
 
